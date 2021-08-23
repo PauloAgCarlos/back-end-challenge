@@ -7,11 +7,12 @@ namespace DrCashApp.Dtos
         
         public int Id {get;set;}
        
-        public string Produto {get;set;}
+        public string Titulo {get;set;}
 
     
-        public string Quantidade {get;set;}
-        public string Fornecedor {get;set;}
+        public string Autor {get;set;}
+        public string Genero {get;set;}
+        public string QuantCopias {get;set;}
 
     
         

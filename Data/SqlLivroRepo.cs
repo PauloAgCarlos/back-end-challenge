@@ -36,12 +36,12 @@ namespace DrCashApp.Data
 
         public IEnumerable <Livro> GetAllLivros()
         {
-            return _context.Livro.ToList();
+            return _context.Livros.ToList();
         }
 
         public Livro GetLivroById(int id)
         {
-            return _context.Livro.FirstOrDefault(p => p.Id == id);
+            return _context.Livros.FirstOrDefault(p => p.Id == id);
         }
  
         public bool SaveChanges()

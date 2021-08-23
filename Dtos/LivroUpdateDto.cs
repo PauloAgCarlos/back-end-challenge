@@ -6,13 +6,16 @@ namespace DrCashApp.Dtos
     {
         [Required]
         [MaxLength(250)]
-        public string Produto {get;set;}
+        public string Titulo {get;set;}
 
         [Required]
-        public string Quantidade {get;set;}
+        public string Autor {get;set;}
 
         [Required]
-        public string Fornecedor {get;set;}
+        public string Genero {get;set;}
+
+        [Required]
+        public string QuantCopias {get;set;}
         
     }
 }
