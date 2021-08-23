@@ -35,7 +35,7 @@ namespace DrCashApp
             
             
             services.AddDbContext<LivroContext> (opt=> opt.UseSqlServer
-            (Configuration.GetConnectionString("ProdutoConnection")));
+            (Configuration.GetConnectionString("LivrosConnection")));
 
             services.AddControllers().AddNewtonsoftJson(s =>{
                s.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
