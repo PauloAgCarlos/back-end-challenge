@@ -2,18 +2,18 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DrCashApp.Dtos
 {
-    public class LivroCreateDto
+    public class LivroReadDto
     {
-        [Required]
-        [MaxLength(250)]
+        
+        public int Id {get;set;}
+       
         public string Produto {get;set;}
 
-        [Required]
+    
         public string Quantidade {get;set;}
-
-        [Required]
         public string Fornecedor {get;set;}
 
-         
+    
+        
     }
 }
