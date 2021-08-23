@@ -7,7 +7,7 @@ namespace DrCashApp.Data
     {
         public LivroContext(DbContextOptions<LivroContext> opt) : base(opt)
         {
-
+            
         }
 
         public DbSet<Livro> Livros {get;set;}
