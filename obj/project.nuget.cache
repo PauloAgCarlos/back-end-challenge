@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sdTZcxuocRLCdUk1gE9KHy05FR+gKrIY5QfULTyW76cS3LE2miPXyevtLZ6baX5Sqz9JyMVwA/8XgwkW6kqimQ==",
+  "dgSpecHash": "/71PggW4TrR2xci0ukpSVpK5RMfKa/ENs9hupQEzlh7FyGMbb37ynLca6epRaSwTujW96cGGE5MC47FZPhHspg==",
   "success": true,
-  "projectFilePath": "C:\\Dotnet\\DrCash\\DrCashApp\\DrCashApp.csproj",
+  "projectFilePath": "C:\\DotNet\\DrCash\\DrCashApp\\DrCashApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

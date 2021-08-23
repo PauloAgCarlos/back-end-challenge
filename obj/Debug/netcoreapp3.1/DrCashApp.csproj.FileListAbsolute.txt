@@ -1,0 +1,5 @@
+C:\DotNet\DrCash\DrCashApp\obj\Debug\netcoreapp3.1\DrCashApp.csprojAssemblyReference.cache
+C:\DotNet\DrCash\DrCashApp\obj\Debug\netcoreapp3.1\DrCashApp.AssemblyInfoInputs.cache
+C:\DotNet\DrCash\DrCashApp\obj\Debug\netcoreapp3.1\DrCashApp.AssemblyInfo.cs
+C:\DotNet\DrCash\DrCashApp\obj\Debug\netcoreapp3.1\DrCashApp.csproj.CoreCompileInputs.cache
+C:\DotNet\DrCash\DrCashApp\obj\Debug\netcoreapp3.1\DrCashApp.MvcApplicationPartsAssemblyInfo.cache
