@@ -34,7 +34,7 @@ namespace DrCashApp.Data
        
         public Livro GetLivroById(int id)
         {
-            return new Livro { Id = 0, Titulo = "NomeLivro", AutorId=1, Genero="Genero", QuantCopias="Genero"}; 
+            return new Livro { Id = 0, Titulo = "NomeLivro", AutorId=1, GeneroId=1, QuantCopias="Genero"}; 
         }
 
         public bool SaveChanges()

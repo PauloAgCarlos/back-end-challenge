@@ -70,9 +70,8 @@ namespace DrCashApp.Migrations
                     b.Property<int>("AutorId")
                         .HasColumnType("int");
 
-                    b.Property<string>("Genero")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("GeneroId")
+                        .HasColumnType("int");
 
                     b.Property<string>("QuantCopias")
                         .IsRequired()
@@ -87,6 +86,8 @@ namespace DrCashApp.Migrations
 
                     b.HasIndex("AutorId");
 
+                    b.HasIndex("GeneroId");
+
                     b.ToTable("Livros");
                 });
 
@@ -98,7 +99,15 @@ namespace DrCashApp.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("DrCashApp.Models.Genero", "Genero")
+                        .WithMany()
+                        .HasForeignKey("GeneroId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Autor");
+
+                    b.Navigation("Genero");
                 });
 #pragma warning restore 612, 618
         }

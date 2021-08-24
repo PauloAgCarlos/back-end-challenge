@@ -20,8 +20,6 @@ namespace DrCashApp.Models
         [Required]
         public int GeneroId { get; set; }
 
-        [Required]
-        public string Genero {get;set;}
 
         [Required]
         public string QuantCopias {get;set;}

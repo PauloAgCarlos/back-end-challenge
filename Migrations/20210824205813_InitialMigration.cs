@@ -42,7 +42,7 @@ namespace DrCashApp.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Titulo = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: false),
                     AutorId = table.Column<int>(type: "int", nullable: false),
-                    Genero = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    GeneroId = table.Column<int>(type: "int", nullable: false),
                     QuantCopias = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
@@ -54,24 +54,35 @@ namespace DrCashApp.Migrations
                         principalTable: "Autores",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Livros_Generos_GeneroId",
+                        column: x => x.GeneroId,
+                        principalTable: "Generos",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Livros_AutorId",
                 table: "Livros",
                 column: "AutorId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Livros_GeneroId",
+                table: "Livros",
+                column: "GeneroId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Generos");
-
-            migrationBuilder.DropTable(
                 name: "Livros");
 
             migrationBuilder.DropTable(
                 name: "Autores");
+
+            migrationBuilder.DropTable(
+                name: "Generos");
         }
     }
 }

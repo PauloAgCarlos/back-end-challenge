@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DrCashApp.Migrations
 {
     [DbContext(typeof(LivroContext))]
-    [Migration("20210824204850_InitialMigration")]
+    [Migration("20210824205813_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -72,9 +72,8 @@ namespace DrCashApp.Migrations
                     b.Property<int>("AutorId")
                         .HasColumnType("int");
 
-                    b.Property<string>("Genero")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("GeneroId")
+                        .HasColumnType("int");
 
                     b.Property<string>("QuantCopias")
                         .IsRequired()
@@ -89,6 +88,8 @@ namespace DrCashApp.Migrations
 
                     b.HasIndex("AutorId");
 
+                    b.HasIndex("GeneroId");
+
                     b.ToTable("Livros");
                 });
 
@@ -100,7 +101,15 @@ namespace DrCashApp.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("DrCashApp.Models.Genero", "Genero")
+                        .WithMany()
+                        .HasForeignKey("GeneroId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Autor");
+
+                    b.Navigation("Genero");
                 });
 #pragma warning restore 612, 618
         }
