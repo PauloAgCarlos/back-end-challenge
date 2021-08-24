@@ -22,9 +22,9 @@ namespace DrCashApp.Data
         {
             var livros = new List<Livro>
             {
-                 new Livro { Id = 0, Titulo = "Livro", Autor="Autor", Genero="Genero", QuantCopias="Genero"},
-                 new Livro { Id = 1, Titulo = "Livro 1", Autor="Autor 1", Genero="Genero 1", QuantCopias="Genero"},
-                 new Livro { Id = 2, Titulo = "Livro", Autor="Autor 2", Genero="Genero 2", QuantCopias="Genero"} 
+                //  new Livro { Id = 0, Titulo = "Livro", Autor="Autor", Genero="Genero", QuantCopias="Genero"},
+                //  new Livro { Id = 1, Titulo = "Livro 1", Autor="Autor 1", Genero="Genero 1", QuantCopias="Genero"},
+                //  new Livro { Id = 2, Titulo = "Livro", Autor="Autor 2", Genero="Genero 2", QuantCopias="Genero"} 
 
             };
 
@@ -34,7 +34,7 @@ namespace DrCashApp.Data
        
         public Livro GetLivroById(int id)
         {
-            return new Livro { Id = 0, Titulo = "NomeLivro", Autor="Autor", Genero="Genero", QuantCopias="Genero"}; 
+            return new Livro { Id = 0, Titulo = "NomeLivro", AutorId=1, Genero="Genero", QuantCopias="Genero"}; 
         }
 
         public bool SaveChanges()

@@ -10,8 +10,15 @@ namespace DrCashApp.Models
         [MaxLength(250)]
         public string Titulo {get;set;}
 
+        public Autor Autor { get; set; }
+
         [Required]
-        public string Autor {get;set;}
+        public int AutorId { get; set; }
+
+        public Genero Genero { get; set; }
+
+        [Required]
+        public int GeneroId { get; set; }
 
         [Required]
         public string Genero {get;set;}
