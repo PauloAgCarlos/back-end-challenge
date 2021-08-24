@@ -43,6 +43,8 @@ namespace DrCashApp
 
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddScoped<ILivroRepo, SqlLivroRepo>();
+            services.AddScoped<IGeneroRepo, SqlGeneroRepo>();
+            services.AddScoped<IAutorRepo, SqlAutorRepo>();
          
 
 

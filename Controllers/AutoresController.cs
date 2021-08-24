@@ -52,7 +52,7 @@ namespace DrCashApp.Controllers
             _repository.CreateAutor(autorModel);
             _repository.SaveChanges();
 
-            var autorReadDto = _mapper.Map<AutoresReadDto>(autorModel);
+            var autorReadDto = _mapper.Map<AutorReadDto>(autorModel);
 
             return CreatedAtRoute(nameof(GetAutorById), new {Id = autorReadDto.Id}, autorcreateDto);
             // return Ok(autorReadDto);

@@ -8,8 +8,8 @@ namespace DrCashApp.Data
     public class SqlGeneroRepo : IGeneroRepo
     {
 
-        private readonly GeneroContext _context;
-        public SqlGeneroRepo(GeneroContext context)
+        private readonly LivroContext _context;
+        public SqlGeneroRepo(LivroContext context)
         {
             _context = context;
         }

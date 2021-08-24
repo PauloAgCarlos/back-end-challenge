@@ -8,8 +8,8 @@ namespace DrCashApp.Data
     public class SqlAutorRepo : IAutorRepo
     {
 
-        private readonly AutorContext _context;
-        public SqlAutorRepo(AutorContext context)
+        private readonly LivroContext _context;
+        public SqlAutorRepo(LivroContext context)
         {
             _context = context;
         }

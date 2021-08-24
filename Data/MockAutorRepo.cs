@@ -22,9 +22,9 @@ namespace DrCashApp.Data
         {
             var autores = new List<Autor>
             {
-                 new Autor { Id = 0, Titulo = "Autor", Autor="Autor", Genero="Genero", QuantCopias="Genero"},
-                 new Autor { Id = 1, Titulo = "Autor 1", Autor="Autor 1", Genero="Genero 1", QuantCopias="Genero"},
-                 new Autor { Id = 2, Titulo = "Autor", Autor="Autor 2", Genero="Genero 2", QuantCopias="Genero"} 
+                 new Autor { Id = 0, Nome = "Autor", Morada="Autor", Telefone="Genero"},
+                 new Autor { Id = 1, Nome = "Autor 1", Morada="Autor 1", Telefone="Genero 1"},
+                 new Autor { Id = 2, Nome = "Autor", Morada="Autor 2", Telefone="Genero 2"} 
 
             };
 
@@ -34,7 +34,7 @@ namespace DrCashApp.Data
        
         public Autor GetAutorById(int id)
         {
-            return new Autor { Id = 0, Titulo = "NomeAutor", Autor="Autor", Genero="Genero", QuantCopias="Genero"}; 
+            return new Autor { Id = 0, Nome = "NomeAutor", Morada="Autor", Telefone="Genero"}; 
         }
 
         public bool SaveChanges()
