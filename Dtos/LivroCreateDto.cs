@@ -9,10 +9,10 @@ namespace DrCashApp.Dtos
         public string Titulo {get;set;}
 
         [Required]
-        public string Autor {get;set;}
+        public int AutorId {get;set;}
 
         [Required]
-        public string Genero {get;set;}
+        public int GeneroId {get;set;}
 
         [Required]
         public string QuantCopias {get;set;}
